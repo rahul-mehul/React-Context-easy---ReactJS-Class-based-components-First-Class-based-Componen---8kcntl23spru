@@ -7,12 +7,9 @@ const App = () => {
   let data = { name: "Newton", age: 3 }
   return (
     <div id="main">
-      <UserContext.Provider value={data}><UserProfile />
-
+      <UserContext.Provider value={data}>
+        <UserProfile />
       </UserContext.Provider>
-
-
-
     </div>
   )
 }
